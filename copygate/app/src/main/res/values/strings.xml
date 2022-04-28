@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">copygate</string>
+    <string name="title_activity_login">loginActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_signup">activity_signup</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_" />
+
+    <Button
+        android:id="@+id/activity_main_myPlantButton"
+        android:layout_width="260dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/myplant"
+        android:text="내 식물"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_main_plantButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/activity_main_plantButton"
+        android:layout_width="260dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/plant"
+        android:text="식물 도감"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_main_bugButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/activity_main_bugButton"
+        android:layout_width="260dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="140dp"
+        android:background="#00FFFFFF"
+        android:drawableBottom="@drawable/bug"
+        android:text="해충 도감"
+        android:textColor="#FF9800"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
